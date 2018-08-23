@@ -1,0 +1,144 @@
+footer
+	background-color: #00c4c9
+	.contact-section
+		min-height: auto
+		padding: 3rem 0
+		h3
+			color: #083e64
+			text-transform: uppercase
+			font-size: 1rem
+			font-weight: 700
+			margin-bottom: 1rem
+		ul.contact-section-contact-info
+			margin: 0
+			li
+				p
+					line-height: 1.5rem
+					margin-bottom: 0
+					color: lighten(#00c4c9, 10%)
+		ul.contact-section-links
+			margin: 0
+			li
+				a
+					text-decoration: none
+					font-size: 1rem
+					color: lighten(#00c4c9, 10%)
+					transition: .3s all ease-in-out
+					line-height: 3rem
+					&:hover
+						color: #083e64
+		form
+			.form-group
+				input
+					background-color: #083e64
+					color: $whites
+					border: 0
+					outline: none
+					border-radius: 0
+					height: 3rem
+					width: 100%
+					&::placeholder
+						font-style: italic
+						color: rgba(255,255,255,.5)
+				.form-control
+					transition: .3s all ease-in-out
+					&:focus
+						box-shadow: 0 0 0 0.2rem lighten(#083e64, 5%)
+			button.btn-email
+				background-color: lighten(#00c4c9, 15%)
+				color: #083e64
+				text-transform: uppercase
+				font-weight: 700
+				width: 100%
+				height: 3rem
+				line-height: 3rem
+				padding: 0
+				border: 0
+				outline: none
+				border-radius: 0
+
+	.copyright-section-wrapper
+		background-color: #083e64
+		.copyright-section
+			min-height: 90px
+			padding: 2rem 1rem
+			p
+				text-align: center
+				color: $whites
+				font-size: 1rem
+				font-weight: 400
+				margin-bottom: 0
+			.social-buttons
+				display: flex
+				justify-content: center
+				align-items: center
+				a.btn-social
+					width: 3rem
+					height: 3rem
+					padding: 0
+					font-size: 1.2rem
+					line-height: 3rem
+					margin: 0 .5rem
+					outline: none
+					border: none
+					border-radius: 50%
+					background-color: #849fb2
+					color: #083e64
+					transition: .3s all ease-in-out
+					&:hover
+						background-color: #fff
+	+media-breakpoint-up(sm)
+		//LANDSCAPE PHONES, 576-768px
+		.contact-section
+			form
+				position: relative
+				height: 3rem
+				width: 100%
+				.form-group
+					input
+						position: absolute
+						padding-right: 6.5rem
+				button.btn-email
+					position: absolute
+					z-index: 3
+					top: 50%
+					right: .375rem
+					transform: translateY(-50%)
+					width: 5.75rem
+					height: 2.25rem
+					line-height: 2.25rem
+					margin: 0
+		.copyright-section-wrapper
+			position: relative
+			.copyright-section
+				p
+					position: absolute
+					top: 50%
+					left: 0
+					transform: translateY(-50%)
+				.social-buttons
+					position: absolute
+					top: 50%
+					right: 0
+					transform: translateY(-50%)
+					a.btn-social
+	+media-breakpoint-up(lg)
+		//LARGE DESKTOP Over 992px
+		.contact-section
+			ul.contact-section-contact-info
+				li
+					p
+						line-height: 1.2rem
+			ul.contact-section-links
+				li
+					a
+						line-height: 1.2rem
+		.copyright-section-wrapper
+			.copyright-section
+				.social-buttons
+					a.btn-social
+						width: 2.2rem
+						height: 2.2rem
+						line-height: 2.2rem
+						font-size: 1rem
+
