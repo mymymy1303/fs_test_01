@@ -6448,10 +6448,16 @@ footer {
         right: 0;
         transform: translateY(-50%); } }
   @media (min-width: 992px) {
-    footer .contact-section ul.contact-section-contact-info li p {
-      line-height: 1.2rem; }
-    footer .contact-section ul.contact-section-links li a {
-      line-height: 1.2rem; }
+    footer .contact-section ul.contact-section-contact-info {
+      font-size: 0; }
+      footer .contact-section ul.contact-section-contact-info li p {
+        font-size: 1rem;
+        line-height: 1.2rem; }
+    footer .contact-section ul.contact-section-links {
+      font-size: 0; }
+      footer .contact-section ul.contact-section-links li a {
+        font-size: 1rem;
+        line-height: 1.2rem; }
     footer .copyright-section-wrapper .copyright-section .social-buttons a.btn-social {
       width: 2.2rem;
       height: 2.2rem;
