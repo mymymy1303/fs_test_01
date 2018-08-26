@@ -1,10 +1,45 @@
 header
+	background-color: $white
+	border-bottom: 1px solid black
 	.navbar
-		+pad(null 0)
+		padding: 1rem 0
 	.navbar-brand
+		padding: 0
 		img 
-			max-height: 1rem
+			max-height: 2rem
+	.navbar-nav
+		.nav-item
+			width: 100%
+			height: 3rem
+			line-height: 3rem
+			display: block
+			text-align: center
+			transition: .3s all ease-in-out
+			&:hover
+				background-color: $xanhnhat
+				color: $whites
+			.link
+				display: block
+	+media-breakpoint-up(sm)
+		//LANDSCAPE PHONES, 576-768px
+		.navbar-nav
+			flex-wrap: wrap
+			flex-direction: row
+			.nav-item
+				max-width: 50%
+				flex: 0 0 50%
 	+media-breakpoint-up(md)
+		//TABLET, 768-992px
 		.navbar-brand
 			img 
-				max-height: 2rem
+				max-height: 2.5rem
+	+media-breakpoint-up(lg)
+		//DESKTOP, 992-1200px
+		.navbar-nav
+			flex-wrap: initial
+			flex-direction: initial
+			.nav-item
+				flex: initial
+				width: 6rem
+				height: 2.5rem
+				line-height: 2.5rem

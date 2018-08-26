@@ -23,7 +23,6 @@ html, body
 	margin: 0
 	&--small
 		font-size: 1rem
-		line-height: 1.2rem
 	&--lightcyan
 		color: lighten($xanhnhat, 10%)
 	&--white
@@ -38,14 +37,20 @@ html, body
 .link
 	text-decoration: none
 	transition: .3s all ease-in-out
-	&:hover
-		text-decoration: none
-		color: $xanhdam
 	&--small
 		font-size: 1rem
-		line-height: 1.2rem
+	&--semibold
+		font-weight: 500
 	&--lightcyan
 		color: lighten($xanhnhat, 10%)
+		&:hover
+			text-decoration: none
+			color: $xanhdam
+	&--black
+		color: #000
+		&:hover
+			text-decoration: none
+			color: $whites
 
 .form--relative
 	position: relative
