@@ -5,6 +5,12 @@ html, body
 	height: 100%
 	width: 100%
 
+.responsive_break
+	display: none
+	+media-breakpoint-up(sm)
+		//Over 576px
+		display: block
+
 .list--nomargin
 	margin: 0
 	font-size: 0
@@ -23,11 +29,14 @@ html, body
 	margin: 0
 	&--small
 		font-size: 1rem
+	&--normal
+		font-size: 1.2rem
 	&--lightcyan
 		color: lighten($xanhnhat, 10%)
 	&--white
 		color: $whites
-
+	&--semibold
+		font-weight: 500
 .link-wrapper
 	padding: 1rem 0
 	+media-breakpoint-up(lg)

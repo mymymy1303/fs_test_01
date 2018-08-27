@@ -1,2 +1,105 @@
-body
-	font-family: Roboto
+// ------------------------------------
+//---------------SECTION---------------
+//-------------------------------------
+=section($section_bg: $whites, $section_min_height: 368px)
+	min-height: $section_min_height
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0
+	padding: 3rem 0
+	background-color: $section_bg
+
+// ------------------------------------
+//----------WELCOME-SLIDER-------------
+//-------------------------------------
+.home_welcome_slider
+	+section($whites, 468px)
+	padding: 0
+	.owl-carousel.owl-theme
+		.welcome_slider_item
+			.main_title
+				width: 100%
+				position: absolute
+				z-index: 3
+				top: 50%
+				transform: translateY(-50%)
+				text-align: center
+				padding: 0 1rem
+				h1
+					font-size: 2.2rem
+					color: $whites
+					font-weight: 500
+				p
+					line-height: 1.3rem
+			.welcome_slider_img_1, .welcome_slider_img_2
+				width: 100%
+				min-height: 468px
+				background-position: center center
+				background-size: cover
+				background-repeat: no-repeat
+				&:before
+					position: absolute
+					content: ''
+					width: 100%
+					height: 100%
+					z-index: 2
+					background-color: rgba(0,0,0,.5)
+			.welcome_slider_img_1
+				background-image: url('../img/home_welcome_slider_1.png')
+			.welcome_slider_img_2
+				background-image: url('../img/home_welcome_slider_2.png')
+				background-position: left center
+		.owl-nav
+			position: absolute
+			z-index: 5
+			width: 100%
+			bottom: 3rem
+			left: 50%
+			transform: translateX(-50%)
+			display: flex
+			justify-content: center
+			align-items: center
+			.owl-prev, .owl-next
+				width: 3rem
+				height: 3rem
+				line-height: 3rem
+				font-size: 1.5rem
+				background-color: #000
+				color: $whites
+				border: 0
+				outline: none
+				transition: .3s all ease-in-out
+				&:hover
+					background-color: $xanhnhat
+			.owl-prev
+				margin-right: 3rem
+	+media-breakpoint-up(lg)
+		//DESKTOP, 992px and up
+		.owl-carousel.owl-theme
+			.welcome_slider_item
+				.main_title
+					bottom: 2rem
+					top: initial
+					transform: none
+					h1
+						font-size: 2.5rem
+				.welcome_slider_img_1, .welcome_slider_img_2
+					&:before
+						height: 0
+						bottom: 0
+						background-color: transparent
+						box-shadow: 0px -60px 120px 120px rgba(0,0,0,.5)
+				.welcome_slider_img_1
+					background-position: center 20%
+				.welcome_slider_img_2
+					background-position: center center
+			.owl-nav
+				bottom: initial
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				padding: 0 3rem
+				.owl-prev
+					margin-right: auto
