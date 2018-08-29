@@ -6374,6 +6374,8 @@ html, body {
     color: #000; }
   .block-title--semibold {
     font-weight: 500; }
+  .block-title--bold {
+    font-weight: 700; }
 
 .text {
   margin: 0; }
@@ -6387,6 +6389,8 @@ html, body {
     color: #ffffff; }
   .text--gray {
     color: #a8a8a8; }
+  .text--darkgray {
+    color: #828282; }
   .text--semibold {
     font-weight: 500; }
 
@@ -6552,7 +6556,7 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 3rem 0;
+  padding: 4.5rem 0;
   background-color: #ffffff;
   padding: 0; }
   .home_welcome_slider .owl-carousel.owl-theme .welcome_slider_item .main_title {
@@ -6642,9 +6646,8 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 3rem 0;
-  background-color: #ffffff;
-  padding: 4.5rem 0; }
+  padding: 4.5rem 0;
+  background-color: #ffffff; }
   .home_news .news_item {
     width: 100%; }
     .home_news .news_item a {
@@ -6684,5 +6687,55 @@ header {
       overflow: hidden; }
       .home_news .news_item__image img {
         max-height: 232px; }
+
+.home_development_strategy {
+  min-height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 4.5rem 0;
+  background-color: transparent;
+  position: relative; }
+  .home_development_strategy:before {
+    position: absolute;
+    content: '';
+    background-image: url("../img/home_development_strategy_bg.png");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    filter: opacity(20%); }
+  .home_development_strategy .development_strategy_item {
+    padding: 0 2.5rem; }
+    .home_development_strategy .development_strategy_item a {
+      text-decoration: none; }
+      .home_development_strategy .development_strategy_item a:hover i, .home_development_strategy .development_strategy_item a:hover h3, .home_development_strategy .development_strategy_item a:active i, .home_development_strategy .development_strategy_item a:active h3 {
+        color: #00c4c9; }
+      .home_development_strategy .development_strategy_item a i {
+        color: #000;
+        width: 100%;
+        font-size: 4.5rem;
+        padding-bottom: 2rem;
+        transition: .3s all ease-in-out; }
+      .home_development_strategy .development_strategy_item a h3 {
+        margin-bottom: 1.5rem;
+        transition: .3s all ease-in-out; }
+      .home_development_strategy .development_strategy_item a p {
+        line-height: 1.2rem; }
+      @media (min-width: 425px) {
+        .home_development_strategy .development_strategy_item a {
+          width: 75%; } }
+      @media (min-width: 768px) {
+        .home_development_strategy .development_strategy_item a {
+          width: 100%; } }
+      @media (min-width: 992px) {
+        .home_development_strategy .development_strategy_item a {
+          padding: 0 1rem; } }
+  @media (min-width: 992px) {
+    .home_development_strategy:before {
+      background-position: bottom 10% center; } }
 
 /*# sourceMappingURL=main.css.map */
