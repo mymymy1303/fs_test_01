@@ -89,7 +89,6 @@
 					&:before
 						height: 0
 						bottom: 0
-						background-color: transparent
 						box-shadow: 0px -60px 120px 120px rgba(0,0,0,.5)
 				.welcome_slider_img_1
 					background-position: center 20%
@@ -103,3 +102,51 @@
 				padding: 0 3rem
 				.owl-prev
 					margin-right: auto
+
+// ------------------------------------
+//-----------HOME-NEWS-----------------
+//-------------------------------------
+.home_news
+	+section($whites, 480px)
+	padding: 4.5rem 0
+	.news_item
+		width: 100%
+		a
+			text-decoration: none
+			figure
+				margin-bottom: 0
+				.news_item__image
+					transition: .3s all ease-in-out
+					img
+						transition: .3s all ease-in-out
+						filter: grayscale(100%)
+				figcaption
+					h3
+						transition: .3s all ease-in-out
+					time
+						line-height: 1rem
+					p
+						margin-top: .5rem
+						line-height: 1.2rem
+						height: 3.6rem
+						overflow: hidden
+						transition: .3s all ease-in-out
+			&:hover, &:active
+				figure
+					.news_item__image
+						box-shadow: 0 0 0 3px $xanhnhat
+						img
+							filter: grayscale(0%)
+					figcaption
+						h3
+							color: $xanhnhat
+						p
+							color: #000
+		@media (min-width: 425px)
+			width: 75%
+		+media-breakpoint-up(md)
+			width: 100%
+		&__image
+			overflow: hidden
+			img
+				max-height: 232px

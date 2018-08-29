@@ -6,6 +6,9 @@ block variables
 	- var bodyclass = 'home'
 
 block body
+	// ------------------------------------
+	// ----------WELCOME-SLIDER-------------
+	// -------------------------------------
 	section.home_welcome_slider
 		.owl-carousel.owl-theme#welcome_slider
 			.welcome_slider_item
@@ -24,5 +27,40 @@ block body
 						br.responsive_break
 						|Full Stack có đầy đủ các kĩ năng tổng hợp
 				.welcome_slider_img_2
-				
-
+	
+	// ------------------------------------
+	// ----------WELCOME-SLIDER-------------
+	// -------------------------------------
+	section.home_news
+		.container
+			.row
+				.col
+					h2.section-title.section-title--black.section-title--bold.section-title--uppercase.section-title__cyanline tin tức
+			.row.mt-5.justify-content-center
+				.col-md-4.news_item.mt-4
+					a(href="javascript:void(0)")
+						figure
+							.news_item__image
+								img(src="./img/home_news_1.png", alt="").img-fluid
+							figcaption
+								h3.block-title.block-title--small.block-title--black.block-title--semibold.mt-3.mb-1 Lorem ipsum dolor
+								time.text.text--small.text--gray 18/08/2018
+								p.text.text--small.text--gray Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam necessitatibus, fugiat nemo fugit ab quia repellendus nisi mollitia veniam reiciendis sequi ipsa praesentium eos provident. Saepe maiores explicabo dolor.
+				.col-md-4.news_item.mt-5.mt-md-4
+					a(href="javascript:void(0)")
+						figure
+							.news_item__image
+								img(src="./img/home_news_2.png", alt="").img-fluid
+							figcaption
+								h3.block-title.block-title--small.block-title--black.block-title--semibold.mt-3.mb-1 Lorem ipsum dolor
+								time.text.text--small.text--gray 18/08/2018
+								p.text.text--small.text--gray Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam necessitatibus, fugiat nemo fugit ab quia repellendus nisi mollitia veniam reiciendis sequi ipsa praesentium eos provident. Saepe maiores explicabo dolor.
+				.col-md-4.news_item.mt-5.mt-md-4
+					a(href="javascript:void(0)")
+						figure
+							.news_item__image
+								img(src="./img/home_news_3.png", alt="").img-fluid
+							figcaption
+								h3.block-title.block-title--small.block-title--black.block-title--semibold.mt-3.mb-1 Lorem ipsum dolor
+								time.text.text--small.text--gray 18/08/2018
+								p.text.text--small.text--gray Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam necessitatibus, fugiat nemo fugit ab quia repellendus nisi mollitia veniam reiciendis sequi ipsa praesentium eos provident. Saepe maiores explicabo dolor.

@@ -5,6 +5,40 @@ html, body
 	height: 100%
 	width: 100%
 
+.section-title
+	text-align: center
+	margin: 0
+	padding: 0
+	font-size: 2rem
+	position: relative
+	&--black
+		color: black
+	&--bold
+		font-weight: 900
+	&--uppercase
+		text-transform: uppercase
+	&__cyanline
+		&:before
+			content: ''
+			position: absolute
+			width: 4.5rem
+			height: 0.1875rem
+			background-color: $xanhnhat
+			bottom: -1.25rem
+			left: 50%
+			transform: translateX(-50%)
+		&:after
+			content: ''
+			position: absolute
+			bottom: -1.5rem
+			left: 50%
+			transform: translateX(-50%)
+			width: .8rem
+			height: .8rem
+			border-radius: 50%
+			background-color: $whites
+			box-shadow: 0 0 0 .2rem $xanhnhat
+
 .responsive_break
 	display: none
 	+media-breakpoint-up(sm)
@@ -24,6 +58,10 @@ html, body
 		text-transform: uppercase
 	&--darkblue
 		color: $xanhdam
+	&--black
+		color: #000
+	&--semibold
+		font-weight: 500
 
 .text
 	margin: 0
@@ -35,6 +73,8 @@ html, body
 		color: lighten($xanhnhat, 10%)
 	&--white
 		color: $whites
+	&--gray
+		color: $xam
 	&--semibold
 		font-weight: 500
 .link-wrapper
