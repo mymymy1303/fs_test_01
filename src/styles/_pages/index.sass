@@ -193,5 +193,144 @@
 	+media-breakpoint-up(lg)
 		&:before
 			background-position: bottom 10% center
-	
 
+//-------------------------------------
+//-------------HOME-NOTE---------------
+//-------------------------------------
+.home_note
+	+section(#000, 300px)
+	position: relative
+	text-align: center
+	&:before
+		position: absolute
+		content: ''
+		background-image: url('../img/home_note_bg.png')
+		height: 100%
+		width: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: bottom center
+		filter: opacity(50%)
+	h2
+		padding: 0 1rem
+	+media-breakpoint-up(lg)
+		//DESKTOP, 992px and up
+		h2
+			width: 50%
+			left: 50%
+			transform: translateX(-50%)
+
+//-------------------------------------
+//-----------HOME-CATEGORY-------------
+//-------------------------------------
+.home_category
+	+section($whites, 368px)
+	.category__tabbed
+		display: flex
+		justify-content: center
+		align-items: center
+		ul
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			li
+				flex: 0 0 50%
+				min-height: 2rem
+				line-height: 2rem
+				text-align: center
+				margin: 0
+				background-color: $whites
+				border-radius: 1rem
+				transition: .3s all ease-in-out
+				margin-top: .5rem
+				&:hover
+					background-color: $xanhnhat
+				a
+					display: block
+					padding: 0 1rem
+					font-size: .85rem
+	.category__items
+		width: 100%
+		a
+			text-decoration: none
+			figure
+				margin-bottom: 0
+				.category__items__img
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: .3s all ease-in-out
+					img
+						transition: .3s all ease-in-out
+						filter: grayscale(100%)
+			&:hover, &:active
+				figure
+					.category__items__img
+						img
+							box-shadow: 0 0 0 3px $xanhnhat
+							filter: grayscale(0%)
+
+	+media-breakpoint-up(sm)
+		//LANDSCAPE PHONES, 576-768px
+		.category__tabbed
+			ul
+				width: 100%
+				li
+					margin-top: 0
+					flex: initial
+					a
+						font-size: 1rem
+
+//-------------------------------------
+//-----------HOME-FEEDBACK-------------
+//-------------------------------------
+.home_feedback
+	+section(#000, 368px)
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url('../img/home_feedback_bg.png')
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+	.owl-carousel.owl-theme
+		text-align: center
+		.feedback_slider_item
+			figure
+				width: 7rem
+				height: 7rem
+				border-radius: 50%
+				overflow: hidden
+				margin: 0
+				margin-left: 50%
+				transform: translateX(-50%)
+				box-shadow: 0 0 0 3px $xanhnhat
+				img
+					border-radius: 50%
+		.owl-stage-outer
+			padding-top: 1.5rem
+		.owl-dots
+			margin-top: .8rem
+			.owl-dot
+				width: .8rem
+				height: .8rem
+				background-color: #c9c9c9
+				border-radius: 50%
+				outline: none
+				margin: 0 .4rem
+			button.owl-dot.active
+				background-color: $xanhnhat
+	+media-breakpoint-up(md)
+		//TABLET, 768-992px
+		.feedback_slider_item
+			width: 60%
+			margin-left: 20%
+	+media-breakpoint-up(lg)
+		//DESKTOP, 992px and up
+		.feedback_slider_item
+			width: 40%
+			margin-left: 30%

@@ -11,10 +11,16 @@ html, body
 	padding: 0
 	font-size: 2rem
 	position: relative
+	&--small
+		font-size: 1.5rem
 	&--black
 		color: black
+	&--white
+		color: white
 	&--bold
 		font-weight: 900
+	&--normal
+		font-weight: 400
 	&--uppercase
 		text-transform: uppercase
 	&__cyanline
@@ -60,6 +66,8 @@ html, body
 		color: $xanhdam
 	&--black
 		color: #000
+	&--white
+		color: $whites
 	&--semibold
 		font-weight: 500
 	&--bold
@@ -73,14 +81,20 @@ html, body
 		font-size: 1.2rem
 	&--lightcyan
 		color: lighten($xanhnhat, 10%)
+	&--cyan
+		color: $xanhnhat
 	&--white
 		color: $whites
 	&--gray
 		color: $xam
 	&--darkgray
 		color: darken($xam, 15%)
+	&--capitalize
+		text-transform: capitalize
 	&--semibold
 		font-weight: 500
+	&--italic
+		font-style: italic
 .link-wrapper
 	padding: 1rem 0
 	+media-breakpoint-up(lg)
@@ -92,8 +106,14 @@ html, body
 	transition: .3s all ease-in-out
 	&--small
 		font-size: 1rem
+	&--normal
+		font-size: 1.2rem
 	&--semibold
 		font-weight: 500
+	&--bold
+		font-weight: 900
+	&--uppercase
+		text-transform: uppercase
 	&--lightcyan
 		color: lighten($xanhnhat, 10%)
 		&:hover
@@ -157,17 +177,37 @@ html, body
 		text-align: right
 
 .btn
+	outline: none
 	transition: .3s all ease-in-out
+	border: 0
+	&--rounded
+		width: 14rem
+		height: 3.5rem
+		line-height: 3.5rem
+		font-size: 1.2rem
+		padding: 0
+		border-radius: 3.5rem
+		&:hover
+			color: $whites
+			background-color: $xanhdam
+			border-radius: 1rem
 	&--circle
 		width: 2.4rem
 		height: 2.4rem
 		line-height: 2.4rem
 		font-size: 1rem
 		padding: 0
-	&--white
-		background-color: $whites
-	&--circle
 		border-radius: 50%
 		&:hover
 			border-radius: .2rem
+	&--cyan
+		background-color: $xanhnhat
+		color: $whites
+	&--white
+		background-color: $whites
+	&--uppercase
+		text-transform: uppercase
+	&--bold
+		font-weight: 700
+
 
