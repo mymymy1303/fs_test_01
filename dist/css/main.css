@@ -6920,4 +6920,47 @@ header {
       width: 40%;
       margin-left: 30%; } }
 
+.home_client {
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 4.5rem 0;
+  background-color: #ffffff; }
+  .home_client .owl-carousel.owl-theme .owl-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .home_client .owl-carousel.owl-theme .owl-nav .owl-prev, .home_client .owl-carousel.owl-theme .owl-nav .owl-next {
+      background-color: #083e64;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0;
+      color: white;
+      margin: 5px 10px; }
+  @media (min-width: 768px) {
+    .home_client .owl-carousel.owl-theme {
+      position: relative; }
+      .home_client .owl-carousel.owl-theme .owl-nav .owl-prev, .home_client .owl-carousel.owl-theme .owl-nav .owl-next {
+        position: absolute;
+        margin: 0;
+        outline: none;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: .3s all ease-in-out; }
+        .home_client .owl-carousel.owl-theme .owl-nav .owl-prev:hover, .home_client .owl-carousel.owl-theme .owl-nav .owl-next:hover {
+          border-radius: 50%;
+          background-color: #ffffff;
+          color: #083e64;
+          border: 1px solid #083e64; }
+        .home_client .owl-carousel.owl-theme .owl-nav .owl-prev:active, .home_client .owl-carousel.owl-theme .owl-nav .owl-next:active {
+          background-color: #083e64;
+          color: #ffffff; }
+      .home_client .owl-carousel.owl-theme .owl-nav .owl-prev {
+        left: -1.5rem; }
+      .home_client .owl-carousel.owl-theme .owl-nav .owl-next {
+        right: -1.5rem; } }
+
 /*# sourceMappingURL=main.css.map */

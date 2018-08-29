@@ -334,3 +334,46 @@
 		.feedback_slider_item
 			width: 40%
 			margin-left: 30%
+
+//-------------------------------------
+//-----------HOME-CLIENT---------------
+//-------------------------------------
+.home_client
+	+section($whites, auto)
+	.owl-carousel.owl-theme
+		.owl-nav
+			display: flex
+			justify-content: center
+			align-items: center
+			.owl-prev, .owl-next
+				background-color: #083e64
+				width: 2rem
+				height: 2rem
+				border-radius: 0
+				color: white
+				margin: 5px 10px
+	+media-breakpoint-up(md)
+		//BIGGER THAN 768px
+		.owl-carousel.owl-theme
+			position: relative
+			.owl-nav
+				//Move navigation buttons to left and right side.
+				.owl-prev, .owl-next
+					position: absolute
+					margin: 0
+					outline: none
+					top: 50%
+					transform: translateY(-50%)
+					transition: .3s all ease-in-out
+					&:hover
+						border-radius: 50%
+						background-color: $whites
+						color: #083e64
+						border: 1px solid #083e64
+					&:active
+						background-color: #083e64
+						color: $whites
+				.owl-prev
+					left: -1.5rem
+				.owl-next
+					right: -1.5rem
